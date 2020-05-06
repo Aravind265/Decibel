@@ -18,14 +18,22 @@ public:
     Song *playlist;
 };
 
-Song* art[13];
+Song *art[14],*gen[6],*play[5];
 
 void initialize()
 {
     int x;
-    for(x=0;x<13;x++)
+    for(x=0;x<14;x++)
     {
         art[x]=NULL;
+    }
+    for(x=0;x<6;x++)
+    {
+        gen[x]=NULL;
+    }
+    for(x=0;x<5;x++)
+    {
+        play[x]=NULL;
     }
 }
 
@@ -847,7 +855,7 @@ int main()
         {
             if(art[1]==NULL)
             {
-                art[0]=&Tracks[i];
+                art[1]=&Tracks[i];
                 Tracks[i].artist=NULL;
             }
             else
@@ -1024,6 +1032,167 @@ int main()
                 art[13]=&Tracks[i];
             }
         }
+
+        if(Tracks[i].genre_name=="PARTY")
+        {
+            if(gen[0]==NULL)
+            {
+                gen[0]=&Tracks[i];
+                Tracks[i].genre=NULL;
+            }
+            else
+            {
+                Tracks[i].genre=gen[0];
+                gen[0]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].genre_name=="MELODY")
+        {
+            if(gen[1]==NULL)
+            {
+                gen[1]=&Tracks[i];
+                Tracks[i].genre=NULL;
+            }
+            else
+            {
+                Tracks[i].genre=gen[1];
+                gen[1]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].genre_name=="LOVE")
+        {
+            if(gen[2]==NULL)
+            {
+                gen[2]=&Tracks[i];
+                Tracks[i].genre=NULL;
+            }
+            else
+            {
+                Tracks[i].genre=gen[2];
+                gen[2]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].genre_name=="MOOD")
+        {
+            if(gen[3]==NULL)
+            {
+                gen[3]=&Tracks[i];
+                Tracks[i].genre=NULL;
+            }
+            else
+            {
+                Tracks[i].genre=gen[3];
+                gen[3]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].genre_name=="RAP")
+        {
+            if(gen[4]==NULL)
+            {
+                gen[4]=&Tracks[i];
+                Tracks[i].genre=NULL;
+            }
+            else
+            {
+                Tracks[i].genre=gen[4];
+                gen[4]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].genre_name=="FOLK")
+        {
+            if(gen[5]==NULL)
+            {
+                gen[5]=&Tracks[i];
+                Tracks[i].genre=NULL;
+            }
+            else
+            {
+                Tracks[i].genre=gen[5];
+                gen[5]=&Tracks[i];
+            }
+        }
+
+        if(Tracks[i].playlist_name=="LATEST TAMIL")
+        {
+            if(play[0]==NULL)
+            {
+                play[0]=&Tracks[i];
+                Tracks[i].playlist=NULL;
+            }
+            else
+            {
+                Tracks[i].playlist=play[0];
+                play[0]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].playlist_name=="HEART BREAKERS")
+        {
+            if(play[1]==NULL)
+            {
+                play[1]=&Tracks[i];
+                Tracks[i].playlist=NULL;
+            }
+            else
+            {
+                Tracks[i].playlist=play[1];
+                play[1]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].playlist_name=="ROMANTIC ACOUSTICS")
+        {
+            if(play[2]==NULL)
+            {
+                play[2]=&Tracks[i];
+                Tracks[i].playlist=NULL;
+            }
+            else
+            {
+                Tracks[i].playlist=play[2];
+                play[2]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].playlist_name=="INIYA IRAVU")
+        {
+            if(play[3]==NULL)
+            {
+                play[3]=&Tracks[i];
+                Tracks[i].playlist=NULL;
+            }
+            else
+            {
+                Tracks[i].playlist=play[3];
+                play[3]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].playlist_name=="PARTY TONIGHT")
+        {
+            if(play[4]==NULL)
+            {
+                play[4]=&Tracks[i];
+                Tracks[i].playlist=NULL;
+            }
+            else
+            {
+                Tracks[i].playlist=play[4];
+                play[4]=&Tracks[i];
+            }  
+        }
+    }
+
+    Song *t=art[0];
+    while(t!=NULL)
+    {
+        cout<<t->name<<endl;
+        t=t->artist;
     }
 
     return 0;
