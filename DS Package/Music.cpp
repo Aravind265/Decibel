@@ -17,10 +17,14 @@ public:
     Song *artist;
     Song *album;
     Song *genre;
-    Song *playlist;
+    Song *playlist1;
+    Song *playlist2;
+    Song *playlist3;
+    Song *playlist4;
+    Song *playlist5;
 };
 
-Song *art[14],*gen[6],*play[5];
+Song *art[14],*gen[6],*play[5],*alb[68];
 
 void initialize()
 {
@@ -36,6 +40,10 @@ void initialize()
     for(x=0;x<5;x++)
     {
         play[x]=NULL;
+    }
+    for(x=0;x<68;x++)
+    {
+        alb[x]=NULL;
     }
 }
 
@@ -1138,82 +1146,2235 @@ int main()
             }
         }
 
-        if(Tracks[i].playlist_name1=="LATEST TAMIL")
+        if((Tracks[i].playlist_name1=="LATEST TAMIL")||(Tracks[i].playlist_name2=="LATEST TAMIL")||(Tracks[i].playlist_name3=="LATEST TAMIL"))
         {
             if(play[0]==NULL)
             {
                 play[0]=&Tracks[i];
-                Tracks[i].playlist=NULL;
+                Tracks[i].playlist1=NULL;
             }
             else
             {
-                Tracks[i].playlist=play[0];
+                Tracks[i].playlist1=play[0];
                 play[0]=&Tracks[i];
             }
         }
 
-        else if(Tracks[i].playlist_name1=="HEART BREAKERS")
+        if((Tracks[i].playlist_name1=="HEART BREAKERS")||(Tracks[i].playlist_name2=="HEART BREAKERS")||(Tracks[i].playlist_name3=="HEART BREAKERS"))
         {
             if(play[1]==NULL)
             {
                 play[1]=&Tracks[i];
-                Tracks[i].playlist=NULL;
+                Tracks[i].playlist2=NULL;
             }
             else
             {
-                Tracks[i].playlist=play[1];
+                Tracks[i].playlist2=play[1];
                 play[1]=&Tracks[i];
             }
         }
 
-        else if(Tracks[i].playlist_name1=="ROMANTIC ACOUSTICS")
+        if((Tracks[i].playlist_name1=="ROMANTIC ACOUSTICS")||(Tracks[i].playlist_name2=="ROMANTIC ACOUSTICS")||(Tracks[i].playlist_name3=="ROMANTIC ACOUSTICS"))
         {
             if(play[2]==NULL)
             {
                 play[2]=&Tracks[i];
-                Tracks[i].playlist=NULL;
+                Tracks[i].playlist3=NULL;
             }
             else
             {
-                Tracks[i].playlist=play[2];
+                Tracks[i].playlist3=play[2];
                 play[2]=&Tracks[i];
             }
         }
 
-        else if(Tracks[i].playlist_name1=="INIYA IRAVU")
+        if((Tracks[i].playlist_name1=="INIYA IRAVU")||(Tracks[i].playlist_name2=="INIYA IRAVU")||(Tracks[i].playlist_name3=="INIYA IRAVU"))
         {
             if(play[3]==NULL)
             {
                 play[3]=&Tracks[i];
-                Tracks[i].playlist=NULL;
+                Tracks[i].playlist4=NULL;
             }
             else
             {
-                Tracks[i].playlist=play[3];
+                Tracks[i].playlist4=play[3];
                 play[3]=&Tracks[i];
             }
         }
 
-        else if(Tracks[i].playlist_name1=="PARTY TONIGHT")
+        if((Tracks[i].playlist_name1=="PARTY TONIGHT")||(Tracks[i].playlist_name2=="PARTY TONIGHT")||(Tracks[i].playlist_name3=="PARTY TOBIGHT"))
         {
             if(play[4]==NULL)
             {
                 play[4]=&Tracks[i];
-                Tracks[i].playlist=NULL;
+                Tracks[i].playlist5=NULL;
             }
             else
             {
-                Tracks[i].playlist=play[4];
+                Tracks[i].playlist5=play[4];
                 play[4]=&Tracks[i];
             }  
         }
+
+        if(Tracks[i].album_name=="MASTER")
+        {
+            if(alb[0]==NULL)
+            {
+                alb[0]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[0];
+                alb[0]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="SOORARAI POTTRU")
+        {
+            if(alb[1]==NULL)
+            {
+                alb[1]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[1];
+                alb[1]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="KANNUM KANNUM KOLLAIYADITHAL")
+        {
+            if(alb[2]==NULL)
+            {
+                alb[2]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[2];
+                alb[2]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="OH MY KADAVULE")
+        {
+            if(alb[3]==NULL)
+            {
+                alb[3]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[3];
+                alb[3]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="DHARALA PRABHU")
+        {
+            if(alb[4]==NULL)
+            {
+                alb[4]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[4];
+                alb[4]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="NAAN SIRITHAAL")
+        {
+            if(alb[5]==NULL)
+            {
+                alb[5]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[5];
+                alb[5]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="PATTAS")
+        {
+            if(alb[6]==NULL)
+            {
+                alb[6]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[6];
+                alb[6]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="HERO")
+        {
+            if(alb[7]==NULL)
+            {
+                alb[7]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[7];
+                alb[7]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="ADITHYA VARMA")
+        {
+            if(alb[8]==NULL)
+            {
+                alb[8]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[8];
+                alb[8]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="PSYCHO")
+        {
+            if(alb[9]==NULL)
+            {
+                alb[9]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[9];
+                alb[9]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="RAJA RANI")
+        {
+            if(alb[10]==NULL)
+            {
+                alb[10]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[10];
+                alb[10]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="TEDDY")
+        {
+            if(alb[11]==NULL)
+            {
+                alb[11]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[11];
+                alb[11]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="DEEPAVALI")
+        {
+            if(alb[12]==NULL)
+            {
+                alb[12]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[12];
+                alb[12]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="VAARANAM AAYIRAM")
+        {
+            if(alb[13]==NULL)
+            {
+                alb[13]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[13];
+                alb[13]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="KADAL")
+        {
+            if(alb[14]==NULL)
+            {
+                alb[14]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[14];
+                alb[14]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="MEESAYA MURUKKU")
+        {
+            if(alb[15]==NULL)
+            {
+                alb[15]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[15];
+                alb[15]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="GULEBAGAVALI")
+        {
+            if(alb[16]==NULL)
+            {
+                alb[16]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[16];
+                alb[16]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="VANAKKAM CHENNAI")
+        {
+            if(alb[17]==NULL)
+            {
+                alb[17]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[17];
+                alb[17]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="MEYAADHA MAAN")
+        {
+            if(alb[18]==NULL)
+            {
+                alb[18]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[18];
+                alb[18]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="PAIYA")
+        {
+            if(alb[19]==NULL)
+            {
+                alb[19]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[19];
+                alb[19]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="ENGEYUM KADHAL")
+        {
+            if(alb[20]==NULL)
+            {
+                alb[20]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[20];
+                alb[20]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="KAATRIN MOZHI")
+        {
+            if(alb[21]==NULL)
+            {
+                alb[21]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[21];
+                alb[21]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="IMAIKKA NODIGAL")
+        {
+            if(alb[22]==NULL)
+            {
+                alb[22]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[22];
+                alb[22]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="THREE")
+        {
+            if(alb[23]==NULL)
+            {
+                alb[23]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[23];
+                alb[23]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="MIRUTHAN")
+        {
+            if(alb[24]==NULL)
+            {
+                alb[24]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[24];
+                alb[24]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="GOA")
+        {
+            if(alb[25]==NULL)
+            {
+                alb[25]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[25];
+                alb[25]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="ANEGAN")
+        {
+            if(alb[26]==NULL)
+            {
+                alb[26]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[26];
+                alb[26]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="RAAVANAN")
+        {
+            if(alb[27]==NULL)
+            {
+                alb[27]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[27];
+                alb[27]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="ROMEO JULIET")
+        {
+            if(alb[28]==NULL)
+            {
+                alb[28]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[28];
+                alb[28]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="MANMADHAN")
+        {
+            if(alb[29]==NULL)
+            {
+                alb[29]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[29];
+                alb[29]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="MR.LOCAL")
+        {
+            if(alb[30]==NULL)
+            {
+                alb[30]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[30];
+                alb[30]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="VINNAI THAANDI VARUVAYA")
+        {
+            if(alb[31]==NULL)
+            {
+                alb[31]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[31];
+                alb[31]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="I")
+        {
+            if(alb[32]==NULL)
+            {
+                alb[32]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[32];
+                alb[32]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="REMO")
+        {
+            if(alb[33]==NULL)
+            {
+                alb[33]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[33];
+                alb[33]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="OK OK")
+        {
+            if(alb[34]==NULL)
+            {
+                alb[34]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[34];
+                alb[34]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="YAARADI NEE MOHINI")
+        {
+            if(alb[35]==NULL)
+            {
+                alb[35]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[35];
+                alb[35]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="BIGIL")
+        {
+            if(alb[36]==NULL)
+            {
+                alb[36]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[36];
+                alb[36]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="SILLUNU ORU KADHAL")
+        {
+            if(alb[37]==NULL)
+            {
+                alb[37]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[37];
+                alb[37]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="ENNAI NOKI PAAYUM THOTTA")
+        {
+            if(alb[38]==NULL)
+            {
+                alb[38]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[38];
+                alb[38]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="DARLING")
+        {
+            if(alb[39]==NULL)
+            {
+                alb[39]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[39];
+                alb[39]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="MAAN KARATE")
+        {
+            if(alb[40]==NULL)
+            {
+                alb[40]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[40];
+                alb[40]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="PYAR PREMA KADHAL")
+        {
+            if(alb[41]==NULL)
+            {
+                alb[41]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[41];
+                alb[41]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="KANA")
+        {
+            if(alb[42]==NULL)
+            {
+                alb[42]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[42];
+                alb[42]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="THANGAMAGAN")
+        {
+            if(alb[43]==NULL)
+            {
+                alb[43]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[43];
+                alb[43]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="KABALI")
+        {
+            if(alb[44]==NULL)
+            {
+                alb[44]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[44];
+                alb[44]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="AADUKALAM")
+        {
+            if(alb[45]==NULL)
+            {
+                alb[45]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[45];
+                alb[45]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="PETTA")
+        {
+            if(alb[46]==NULL)
+            {
+                alb[46]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[46];
+                alb[46]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="COMALI")
+        {
+            if(alb[47]==NULL)
+            {
+                alb[47]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[47];
+                alb[47]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="THAANA SERNDHA KOOTAM")
+        {
+            if(alb[48]==NULL)
+            {
+                alb[48]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[48];
+                alb[48]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="VEDHALAM")
+        {
+            if(alb[49]==NULL)
+            {
+                alb[49]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[49];
+                alb[49]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="ETHIR NEECHAL")
+        {
+            if(alb[50]==NULL)
+            {
+                alb[50]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[50];
+                alb[50]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="MADARASAPATTINAM")
+        {
+            if(alb[51]==NULL)
+            {
+                alb[51]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[51];
+                alb[51]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="VISWASAM")
+        {
+            if(alb[52]==NULL)
+            {
+                alb[52]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[52];
+                alb[52]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="MERSAL")
+        {
+            if(alb[53]==NULL)
+            {
+                alb[53]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[53];
+                alb[53]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="24")
+        {
+            if(alb[54]==NULL)
+            {
+                alb[54]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[54];
+                alb[54]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="VIKRAM VEDHA")
+        {
+            if(alb[55]==NULL)
+            {
+                alb[55]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[55];
+                alb[55]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="SIVAPU MANJAL PACHAI")
+        {
+            if(alb[56]==NULL)
+            {
+                alb[56]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[56];
+                alb[56]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="NAANUM ROWDY THAN")
+        {
+            if(alb[57]==NULL)
+            {
+                alb[57]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[57];
+                alb[57]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="NGK")
+        {
+            if(alb[58]==NULL)
+            {
+                alb[58]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[58];
+                alb[58]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="MAARI 2")
+        {
+            if(alb[59]==NULL)
+            {
+                alb[59]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[59];
+                alb[59]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="MARYAN")
+        {
+            if(alb[60]==NULL)
+            {
+                alb[60]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[60];
+                alb[60]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="RAJINIMURUGAN")
+        {
+            if(alb[61]==NULL)
+            {
+                alb[61]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[61];
+                alb[61]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="NATPE THUNAI")
+        {
+            if(alb[62]==NULL)
+            {
+                alb[62]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[62];
+                alb[62]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="MAARI")
+        {
+            if(alb[63]==NULL)
+            {
+                alb[63]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[63];
+                alb[63]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="VIP")
+        {
+            if(alb[64]==NULL)
+            {
+                alb[64]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[64];
+                alb[64]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="VELAIKARAN")
+        {
+            if(alb[65]==NULL)
+            {
+                alb[65]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[65];
+                alb[65]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="MANKATHA")
+        {
+            if(alb[66]==NULL)
+            {
+                alb[66]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[66];
+                alb[66]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].album_name=="BIRIYANI")
+        {
+            if(alb[67]==NULL)
+            {
+                alb[67]=&Tracks[i];
+                Tracks[i].album=NULL;
+            }
+            else
+            {
+                Tracks[i].album=alb[67];
+                alb[67]=&Tracks[i];
+            }
+        }
     }
 
-    Song *t=art[0];
+    int opt1,opt2,opt3,opt4;
+    Song *temp,*nav;
+
+    cout<<"\t\tWelcome to the Music Player"<<endl;
+    cout<<"\t\tThis player consists of collection of over hundred songs from over 60 albums and 15 different artists and various genres"<<endl;
+    cout<<"\t\tIn this player the user can create one custom playlist for themselves"<<endl;
+    cout<<"\t\tThe user interface will be menu driven and the user can select the from the menu"<<endl<<endl;
+    cout<<"\t\tMain menu->"<<endl;
+    cout<<"\t\t1. Search and open songs from existing playlists"<<endl;
+    cout<<"\t\t2. Create a custom playlist for youself"<<endl;
+    cout<<"\t\tEnter the option:";
+    cin>>opt1;
+    cout<<endl<<endl;
+
+    switch(opt1)
+    {
+        case 1:
+            cout<<"Select any option from the menu below"<<endl;
+            cout<<"Playlist menu->"<<endl;
+            cout<<"1. View songs based on artists"<<endl;
+            cout<<"2. View songs based on genre"<<endl;
+            cout<<"3. View songs based on playlists made by Music player"<<endl;
+            cout<<"4. View songs based on album"<<endl;
+            cout<<"Enter the option:";
+            cin>>opt2;
+            switch(opt2)
+            {
+                case 1:
+                    cout<<"Select your favourite artist from the menu below"<<endl;
+                    cout<<"Artist menu->"<<endl;
+                    cout<<"1. Anirudh Ravichander"<<endl;
+                    cout<<"2. G.V.Prakash kumar"<<endl;
+                    cout<<"3. Benny Dayal"<<endl;
+                    cout<<"4. Leon James"<<endl;
+                    cout<<"5. Sid Sriram"<<endl;
+                    cout<<"6. Hip Hop Thamizha"<<endl;
+                    cout<<"7. Dhanush"<<endl;
+                    cout<<"8. Yuvan Shankar Raja"<<endl;
+                    cout<<"9. Santhosh Narayanan"<<endl;
+                    cout<<"10.Dhruv Vikram"<<endl;
+                    cout<<"11.D.Imman"<<endl;
+                    cout<<"12.Harris Jayaraj"<<endl;
+                    cout<<"13.Vivek-Mervin"<<endl;
+                    cout<<"14.Sam.C.S"<<endl;
+                    cout<<"Enter the artist from which you want to choose the track(option)";
+                    cin>>opt3;
+                    switch(opt3)
+                    {
+                        case 1:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below:"<<endl;
+                            temp=art[0];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Genre:"<<temp->genre_name<<endl;
+                                cout<<endl;
+                                temp=temp->artist;
+                                count++;
+                                if(count%5==0||temp->artist==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        r1:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter the correct option";
+                                            goto r1;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=art[0];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->artist;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 2:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below:"<<endl;
+                            temp=art[1];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Genre:"<<temp->genre_name<<endl;
+                                cout<<endl;
+                                temp=temp->artist;
+                                count++;
+                                if(count%5==0||temp->artist==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        r2:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter the correct option";
+                                            goto r2;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=art[1];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->artist;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 3:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below:"<<endl;
+                            temp=art[2];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Genre:"<<temp->genre_name<<endl;
+                                cout<<endl;
+                                temp=temp->artist;
+                                count++;
+                                if(count%5==0||temp->artist==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        r3:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter the correct option";
+                                            goto r3;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=art[2];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->artist;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 4:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below:"<<endl;
+                            temp=art[3];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Genre:"<<temp->genre_name<<endl;
+                                cout<<endl;
+                                temp=temp->artist;
+                                count++;
+                                if(count%5==0||temp->artist==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        r4:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter the correct option";
+                                            goto r4;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=art[3];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->artist;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 5:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below:"<<endl;
+                            temp=art[4];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Genre:"<<temp->genre_name<<endl;
+                                cout<<endl;
+                                temp=temp->artist;
+                                count++;
+                                if(count%5==0||temp->artist==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        r5:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter the correct option";
+                                            goto r5;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=art[4];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->artist;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 6:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below:"<<endl;
+                            temp=art[5];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Genre:"<<temp->genre_name<<endl;
+                                cout<<endl;
+                                temp=temp->artist;
+                                count++;
+                                if(count%5==0||temp->artist==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        r6:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter the correct option";
+                                            goto r6;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=art[5];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->artist;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 7:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below:"<<endl;
+                            temp=art[6];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Genre:"<<temp->genre_name<<endl;
+                                cout<<endl;
+                                temp=temp->artist;
+                                count++;
+                                if(count%5==0||temp->artist==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        r7:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter the correct option";
+                                            goto r7;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=art[6];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->artist;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 8:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below:"<<endl;
+                            temp=art[7];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Genre:"<<temp->genre_name<<endl;
+                                cout<<endl;
+                                temp=temp->artist;
+                                count++;
+                                if(count%5==0||temp->artist==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        r8:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter the correct option";
+                                            goto r8;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=art[7];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->artist;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 9:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below:"<<endl;
+                            temp=art[8];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Genre:"<<temp->genre_name<<endl;
+                                cout<<endl;
+                                temp=temp->artist;
+                                count++;
+                                if(count%5==0||temp->artist==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        r9:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter the correct option";
+                                            goto r9;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=art[8];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->artist;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 10:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below:"<<endl;
+                            temp=art[9];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Genre:"<<temp->genre_name<<endl;
+                                cout<<endl;
+                                temp=temp->artist;
+                                count++;
+                                if(count%5==0||temp->artist==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        r10:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter the correct option";
+                                            goto r10;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=art[9];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->artist;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 11:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below:"<<endl;
+                            temp=art[10];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Genre:"<<temp->genre_name<<endl;
+                                cout<<endl;
+                                temp=temp->artist;
+                                count++;
+                                if(count%5==0||temp->artist==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        r11:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter the correct option";
+                                            goto r11;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=art[10];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->artist;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 12:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below:"<<endl;
+                            temp=art[11];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Genre:"<<temp->genre_name<<endl;
+                                cout<<endl;
+                                temp=temp->artist;
+                                count++;
+                                if(count%5==0||temp->artist==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        r12:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter the correct option";
+                                            goto r12;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=art[11];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->artist;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 13:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below:"<<endl;
+                            temp=art[12];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Genre:"<<temp->genre_name<<endl;
+                                cout<<endl;
+                                temp=temp->artist;
+                                count++;
+                                if(count%5==0||temp->artist==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        r13:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter the correct option";
+                                            goto r13;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=art[12];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->artist;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 14:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below:"<<endl;
+                            temp=art[13];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Genre:"<<temp->genre_name<<endl;
+                                cout<<endl;
+                                temp=temp->artist;
+                                count++;
+                                if(count%5==0||temp->artist==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        r14:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter the correct option";
+                                            goto r14;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=art[13];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->artist;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                    }
+                    break;
+                case 2:
+                    cout<<"Select your favourite genre from the menu below"<<endl;
+                    cout<<"1. Party"<<endl;
+                    cout<<"2. Melody"<<endl;
+                    cout<<"3. Love"<<endl;
+                    cout<<"4. Mood"<<endl;
+                    cout<<"5. Rap"<<endl;
+                    cout<<"6. Folk"<<endl;
+                    cout<<"Enter the genre from which you want to choose the track(option):";
+                    cin>>opt3;
+                    switch(opt3)
+                    {
+                        case 1:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below"<<endl;
+                            temp=gen[0];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Artist"<<temp->artist_name<<endl;
+                                cout<<endl;
+                                temp=temp->genre;
+                                count++;
+                                if(count%5==0||temp->genre==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        g1:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter correct option";
+                                            goto g1;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=gen[0];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->genre;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 2:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below"<<endl;
+                            temp=gen[1];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Artist"<<temp->artist_name<<endl;
+                                cout<<endl;
+                                temp=temp->genre;
+                                count++;
+                                if(count%5==0||temp->genre==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        g2:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter correct option";
+                                            goto g2;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=gen[1];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->genre;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 3:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below"<<endl;
+                            temp=gen[2];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Artist"<<temp->artist_name<<endl;
+                                cout<<endl;
+                                temp=temp->genre;
+                                count++;
+                                if(count%5==0||temp->genre==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        g3:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter correct option";
+                                            goto g3;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=gen[2];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->genre;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 4:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below"<<endl;
+                            temp=gen[3];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Artist"<<temp->artist_name<<endl;
+                                cout<<endl;
+                                temp=temp->genre;
+                                count++;
+                                if(count%5==0||temp->genre==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        g4:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter correct option";
+                                            goto g4;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=gen[3];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->genre;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 5:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below"<<endl;
+                            temp=gen[4];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Artist"<<temp->artist_name<<endl;
+                                cout<<endl;
+                                temp=temp->genre;
+                                count++;
+                                if(count%5==0||temp->genre==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        g5:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter correct option";
+                                            goto g5;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=gen[4];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->genre;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 6:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below"<<endl;
+                            temp=gen[5];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Artist"<<temp->artist_name<<endl;
+                                cout<<endl;
+                                temp=temp->genre;
+                                count++;
+                                if(count%5==0||temp->genre==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        g6:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter correct option";
+                                            goto g6;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=gen[5];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->genre;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                    }
+                    break;
+                case 3:
+                    cout<<"Select the playlist you want to view"<<endl;
+                    cout<<"1. Latest Tamil"<<endl;
+                    cout<<"2. Heart Breakers"<<endl;
+                    cout<<"3. Romantic Acoustics"<<endl;
+                    cout<<"4. Iniya Iravu"<<endl;
+                    cout<<"5. Party Tonight"<<endl;
+                    cout<<"Enter the playlist you want to view(option):"<<endl;
+                    cin>>opt3;
+                    switch(opt3)
+                    {
+                        case 1:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below"<<endl;
+                            temp=play[0];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Artist:"<<temp->artist<<endl;
+                                cout<<endl;
+                                temp=temp->playlist1;
+                                count++;
+                                if(count%5==0||temp->playlist1==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        p1:
+                                        cout<<"Enter the S.No of the song to open in browser";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter correct option";
+                                            goto p1;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=play[0];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->playlist1;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 2:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below"<<endl;
+                            temp=play[1];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Artist:"<<temp->artist<<endl;
+                                cout<<endl;
+                                temp=temp->playlist2;
+                                count++;
+                                if(count%5==0||temp->playlist2==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        p2:
+                                        cout<<"Enter the S.No of the song to open in browser";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter correct option";
+                                            goto p2;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=play[1];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->playlist2;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 3:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below"<<endl;
+                            temp=play[2];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Artist:"<<temp->artist<<endl;
+                                cout<<endl;
+                                temp=temp->playlist3;
+                                count++;
+                                if(count%5==0||temp->playlist3==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        p3:
+                                        cout<<"Enter the S.No of the song to open in browser";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter correct option";
+                                            goto p3;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=play[2];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->playlist3;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 4:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below"<<endl;
+                            temp=play[3];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Artist:"<<temp->artist<<endl;
+                                cout<<endl;
+                                temp=temp->playlist4;
+                                count++;
+                                if(count%5==0||temp->playlist4==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        p4:
+                                        cout<<"Enter the S.No of the song to open in browser";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter correct option";
+                                            goto p4;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=play[3];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->playlist4;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 5:
+                            int count=1;
+                            char check;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below"<<endl;
+                            temp=play[4];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Artist:"<<temp->artist<<endl;
+                                cout<<endl;
+                                temp=temp->playlist5;
+                                count++;
+                                if(count%5==0||temp->playlist5==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        p5:
+                                        cout<<"Enter the S.No of the song to open in browser";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter correct option";
+                                            goto p5;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=play[4];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->playlist5;
+                                                mov++;
+                                            }
+                                            //Code to open the link in browser
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+
+                    }
+
+            }
+    }
+
+    Song *t=play[2];
     while(t!=NULL)
     {
         cout<<t->name<<endl;
-        t=t->artist;
+        t=t->playlist3;
     }
 
     return 0;
