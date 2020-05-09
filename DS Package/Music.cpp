@@ -2171,6 +2171,8 @@ int main()
 
     int opt1,opt2,opt3,opt4;
     Song *temp,*nav;
+    char check;
+    int count=1;
 
     cout<<"\t\tWelcome to the Music Player"<<endl;
     cout<<"\t\tThis player consists of collection of over hundred songs from over 60 albums and 15 different artists and various genres"<<endl;
@@ -2218,8 +2220,7 @@ int main()
                     switch(opt3)
                     {
                         case 1:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
                             temp=art[0];
@@ -2263,8 +2264,7 @@ int main()
                             }
                             break;
                         case 2:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
                             temp=art[1];
@@ -2308,8 +2308,7 @@ int main()
                             }
                             break;
                         case 3:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
                             temp=art[2];
@@ -2353,8 +2352,7 @@ int main()
                             }
                             break;
                         case 4:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
                             temp=art[3];
@@ -2398,8 +2396,7 @@ int main()
                             }
                             break;
                         case 5:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
                             temp=art[4];
@@ -2443,8 +2440,7 @@ int main()
                             }
                             break;
                         case 6:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
                             temp=art[5];
@@ -2488,8 +2484,7 @@ int main()
                             }
                             break;
                         case 7:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
                             temp=art[6];
@@ -2533,8 +2528,7 @@ int main()
                             }
                             break;
                         case 8:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
                             temp=art[7];
@@ -2578,8 +2572,7 @@ int main()
                             }
                             break;
                         case 9:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
                             temp=art[8];
@@ -2623,8 +2616,7 @@ int main()
                             }
                             break;
                         case 10:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
                             temp=art[9];
@@ -2668,8 +2660,7 @@ int main()
                             }
                             break;
                         case 11:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
                             temp=art[10];
@@ -2713,8 +2704,7 @@ int main()
                             }
                             break;
                         case 12:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
                             temp=art[11];
@@ -2758,8 +2748,7 @@ int main()
                             }
                             break;
                         case 13:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
                             temp=art[12];
@@ -2803,8 +2792,7 @@ int main()
                             }
                             break;
                         case 14:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
                             temp=art[13];
@@ -2862,8 +2850,7 @@ int main()
                     switch(opt3)
                     {
                         case 1:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
                             temp=gen[0];
@@ -2907,8 +2894,7 @@ int main()
                             }
                             break;
                         case 2:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
                             temp=gen[1];
@@ -2952,8 +2938,7 @@ int main()
                             }
                             break;
                         case 3:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
                             temp=gen[2];
@@ -2997,8 +2982,7 @@ int main()
                             }
                             break;
                         case 4:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
                             temp=gen[3];
@@ -3042,8 +3026,7 @@ int main()
                             }
                             break;
                         case 5:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
                             temp=gen[4];
@@ -3087,8 +3070,7 @@ int main()
                             }
                             break;
                         case 6:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
                             temp=gen[5];
@@ -3145,8 +3127,7 @@ int main()
                     switch(opt3)
                     {
                         case 1:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
                             temp=play[0];
@@ -3189,8 +3170,7 @@ int main()
                             }
                             break;
                         case 2:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
                             temp=play[1];
@@ -3233,8 +3213,7 @@ int main()
                             }
                             break;
                         case 3:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
                             temp=play[2];
@@ -3254,6 +3233,7 @@ int main()
                                     if(check=='Y'||check=='y')
                                     {
                                         p3:
+                                        cout<<endl;
                                         cout<<"Enter the S.No of the song to open in browser";
                                         cin>>opt4;
                                         if(opt4>count)
@@ -3277,8 +3257,7 @@ int main()
                             }
                             break;
                         case 4:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
                             temp=play[3];
@@ -3321,8 +3300,7 @@ int main()
                             }
                             break;
                         case 5:
-                            int count=1;
-                            char check;
+                            count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
                             temp=play[4];
@@ -3370,12 +3348,12 @@ int main()
             }
     }
 
-    Song *t=play[2];
+    /*Song *t=play[2];
     while(t!=NULL)
     {
         cout<<t->name<<endl;
         t=t->playlist3;
-    }
+    }*/
 
     return 0;
 }
