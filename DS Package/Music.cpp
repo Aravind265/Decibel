@@ -3206,7 +3206,7 @@ int main()
                             {
                                 cout<<"S.No:"<<count<<endl;
                                 cout<<"Song:"<<temp->name<<endl;
-                                cout<<"Artist:"<<temp->artist<<endl;
+                                cout<<"Artist:"<<temp->artist_name<<endl;
                                 cout<<endl;
                                 temp=temp->playlist1;
                                 count++;
@@ -3249,7 +3249,7 @@ int main()
                             {
                                 cout<<"S.No:"<<count<<endl;
                                 cout<<"Song:"<<temp->name<<endl;
-                                cout<<"Artist:"<<temp->artist<<endl;
+                                cout<<"Artist:"<<temp->artist_name<<endl;
                                 cout<<endl;
                                 temp=temp->playlist2;
                                 count++;
@@ -3292,7 +3292,7 @@ int main()
                             {
                                 cout<<"S.No:"<<count<<endl;
                                 cout<<"Song:"<<temp->name<<endl;
-                                cout<<"Artist:"<<temp->artist<<endl;
+                                cout<<"Artist:"<<temp->artist_name<<endl;
                                 cout<<endl;
                                 temp=temp->playlist3;
                                 count++;
@@ -3336,7 +3336,7 @@ int main()
                             {
                                 cout<<"S.No:"<<count<<endl;
                                 cout<<"Song:"<<temp->name<<endl;
-                                cout<<"Artist:"<<temp->artist<<endl;
+                                cout<<"Artist:"<<temp->artist_name<<endl;
                                 cout<<endl;
                                 temp=temp->playlist4;
                                 count++;
@@ -3379,7 +3379,7 @@ int main()
                             {
                                 cout<<"S.No:"<<count<<endl;
                                 cout<<"Song:"<<temp->name<<endl;
-                                cout<<"Artist:"<<temp->artist<<endl;
+                                cout<<"Artist:"<<temp->artist_name<<endl;
                                 cout<<endl;
                                 temp=temp->playlist5;
                                 count++;
@@ -5408,7 +5408,7 @@ int main()
                             //Code to open the link in browser
                             break;
                     }
-                    break;
+                    break; 
             }
     }
 
