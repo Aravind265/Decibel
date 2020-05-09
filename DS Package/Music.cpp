@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+#include<windows.h>
 
 using namespace std;
 
@@ -13,7 +14,7 @@ public:
     string playlist_name1;
     string playlist_name2;
     string playlist_name3;
-    string url;
+    LPCSTR url;
     Song *artist;
     Song *album;
     Song *genre;
@@ -51,6 +52,76 @@ int main()
 {
     int i;
     Song Tracks[113];
+    string list[68];
+
+    list[0]="MASTER";
+    list[1]="SOORARAI POTTRU";
+    list[2]="KANNUM KANNUM KOLLAIYADITHAL";
+    list[3]="OH MY KADAVULE";
+    list[4]="DHARALA PRABHU";
+    list[5]="NAAN SIRITHAAL";
+    list[6]="PATTAS";
+    list[7]="HERO";
+    list[8]="ADITHYA VARMA";
+    list[9]="PSYCHO";
+    list[10]="RAJA RANI";
+    list[11]="TEDDY";
+    list[12]="DEEPAVALI";
+    list[13]="VAARANAM AAYIRAM";
+    list[14]="KADAL";
+    list[15]="MEESAYA MURUKKU";
+    list[16]="GULEBAGAVALI";
+    list[17]="VANAKKAM CHENNAI";
+    list[18]="MEYAADHA MAAN";
+    list[19]="PAIYA";
+    list[20]="ENGEYUM KADHAL";
+    list[21]="KAATRIN MOZHI";
+    list[22]="IMAIKKA NODIGAL";
+    list[23]="THREE";
+    list[24]="MIRUTHAN";
+    list[25]="GOA";
+    list[26]="ANEGAN";
+    list[27]="RAAVANAN";
+    list[28]="ROMEO JULIET";
+    list[29]="MANMADHAN";
+    list[30]="MR.LOCAL";
+    list[31]="VINNAI THAANDI VARUVAYA";
+    list[32]="I";
+    list[33]="REMO";
+    list[34]="OK OK";
+    list[35]="YAARADI NEE MOHINI";
+    list[36]="BIGIL";
+    list[37]="SILLUNU ORU KADHAL";
+    list[38]="ENAI NOKKI PAAYUM THOTA";
+    list[39]="DARLING";
+    list[40]="MAAN KARATE";
+    list[41]="PYAR PREMA KAADHAL";
+    list[42]="KANAA";
+    list[43]="THNAGAMAGAN";
+    list[44]="KABALI";
+    list[45]="AADUKALAM";
+    list[46]="PETTA";
+    list[47]="COMALI";
+    list[48]="THAANA SERNDHA KOOTAM";
+    list[49]="VEDHALAM";
+    list[50]="ETHIR NEECHAL";
+    list[51]="MADARASAPATTINAM";
+    list[52]="VISWASAM";
+    list[53]="MERSAL";
+    list[54]="24";
+    list[55]="VIKRAM VEDHA";
+    list[56]="SIVAPU MANJAL PACHAI";
+    list[57]="NAANUM ROWDY THAAN";
+    list[58]="NGK";
+    list[59]="MAARI 2";
+    list[60]="MARYAN";
+    list[61]="RAJINI MURUGAN";
+    list[62]="NATPE THUNAI";
+    list[63]="MAARI";
+    list[64]="VIP";
+    list[65]="VELAIKARAN";
+    list[66]="MANKATHA";
+    list[67]="BIRIYANI";
 
     Tracks[0].name="VAATHI COMING";
     Tracks[0].artist_name="ANIRUDH RAVICHANDER";
@@ -1748,7 +1819,7 @@ int main()
             }
         }
 
-        else if(Tracks[i].album_name=="ENNAI NOKI PAAYUM THOTTA")
+        else if(Tracks[i].album_name=="ENAI NOKKI PAAYUM THOTA")
         {
             if(alb[38]==NULL)
             {
@@ -2172,7 +2243,7 @@ int main()
     int opt1,opt2,opt3,opt4;
     Song *temp,*nav;
     char check;
-    int count=1;
+    int count=1,move=0;
 
     cout<<"\t\tWelcome to the Music Player"<<endl;
     cout<<"\t\tThis player consists of collection of over hundred songs from over 60 albums and 15 different artists and various genres"<<endl;
@@ -3342,9 +3413,2002 @@ int main()
                                 }
                             }
                             break;
-
                     }
-
+                    break;
+                case 4:
+                    int j=1;
+                    char ch;
+                    cout<<"Albums are listed below"<<endl;
+                    for(j=1;j<=68;j++)
+                    {
+                        cout<<j<<"."<<list[j-i]<<endl;
+                        if(j%5==0||j==68)
+                        {
+                            cout<<"Did you find the album you are looking for?(Y/N):";
+                            cin>>ch;
+                            if(ch=='Y'||ch=='y')
+                            {
+                                cout<<endl<<"Enter the album number to view the tracks:";
+                                cin>>opt3;
+                            }
+                        }
+                    }
+                    switch(opt3)
+                    {
+                        case 1:
+                            count=1;
+                            cout<<list[0]<<":"<<endl;
+                            temp=alb[0];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a1:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a1;
+                            }
+                            nav=alb[0];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 2:
+                            count=1;
+                            cout<<list[1]<<":"<<endl;
+                            temp=alb[1];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a2:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a2;
+                            }
+                            nav=alb[1];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 3:
+                            count=1;
+                            cout<<list[2]<<":"<<endl;
+                            temp=alb[2];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a3:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a3;
+                            }
+                            nav=alb[2];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 4:
+                            count=1;
+                            cout<<list[3]<<":"<<endl;
+                            temp=alb[3];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a4:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a4;
+                            }
+                            nav=alb[3];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 5:
+                            count=1;
+                            cout<<list[4]<<":"<<endl;
+                            temp=alb[4];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a5:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a5;
+                            }
+                            nav=alb[4];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 6:
+                            count=1;
+                            cout<<list[5]<<":"<<endl;
+                            temp=alb[5];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a6:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a6;
+                            }
+                            nav=alb[5];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 7:
+                            count=1;
+                            cout<<list[6]<<":"<<endl;
+                            temp=alb[6];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a7:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a7;
+                            }
+                            nav=alb[6];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 8:
+                            count=1;
+                            cout<<list[7]<<":"<<endl;
+                            temp=alb[7];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a8:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a8;
+                            }
+                            nav=alb[7];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 9:
+                            count=1;
+                            cout<<list[8]<<":"<<endl;
+                            temp=alb[8];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a9:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a9;
+                            }
+                            nav=alb[8];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 10:
+                            count=1;
+                            cout<<list[9]<<":"<<endl;
+                            temp=alb[9];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a10:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a10;
+                            }
+                            nav=alb[9];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 11:
+                            count=1;
+                            cout<<list[10]<<":"<<endl;
+                            temp=alb[10];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a11:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a11;
+                            }
+                            nav=alb[10];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 12:
+                            count=1;
+                            cout<<list[11]<<":"<<endl;
+                            temp=alb[11];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a12:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a12;
+                            }
+                            nav=alb[11];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 13:
+                            count=1;
+                            cout<<list[12]<<":"<<endl;
+                            temp=alb[12];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a13:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a13;
+                            }
+                            nav=alb[12];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 14:
+                            count=1;
+                            cout<<list[13]<<":"<<endl;
+                            temp=alb[13];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a14:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a14;
+                            }
+                            nav=alb[13];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 15:
+                            count=1;
+                            cout<<list[14]<<":"<<endl;
+                            temp=alb[14];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a15:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a15;
+                            }
+                            nav=alb[14];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 16:
+                            count=1;
+                            cout<<list[15]<<":"<<endl;
+                            temp=alb[15];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a16:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a16;
+                            }
+                            nav=alb[15];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 17:
+                            count=1;
+                            cout<<list[16]<<":"<<endl;
+                            temp=alb[16];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a17:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a17;
+                            }
+                            nav=alb[16];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 18:
+                            count=1;
+                            cout<<list[17]<<":"<<endl;
+                            temp=alb[17];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a18:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a18;
+                            }
+                            nav=alb[17];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 19:
+                            count=1;
+                            cout<<list[18]<<":"<<endl;
+                            temp=alb[18];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a19:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a19;
+                            }
+                            nav=alb[18];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 20:
+                            count=1;
+                            cout<<list[19]<<":"<<endl;
+                            temp=alb[19];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a20:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a20;
+                            }
+                            nav=alb[19];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 21:
+                            count=1;
+                            cout<<list[20]<<":"<<endl;
+                            temp=alb[20];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a21:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a21;
+                            }
+                            nav=alb[20];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 22:
+                            count=1;
+                            cout<<list[21]<<":"<<endl;
+                            temp=alb[21];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a22:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a22;
+                            }
+                            nav=alb[21];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 23:
+                            count=1;
+                            cout<<list[22]<<":"<<endl;
+                            temp=alb[22];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a23:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a23;
+                            }
+                            nav=alb[22];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 24:
+                            count=1;
+                            cout<<list[23]<<":"<<endl;
+                            temp=alb[23];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a24:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a24;
+                            }
+                            nav=alb[23];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 25:
+                            count=1;
+                            cout<<list[24]<<":"<<endl;
+                            temp=alb[24];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a25:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a25;
+                            }
+                            nav=alb[24];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 26:
+                            count=1;
+                            cout<<list[25]<<":"<<endl;
+                            temp=alb[25];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a26:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a26;
+                            }
+                            nav=alb[25];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 27:
+                            count=1;
+                            cout<<list[26]<<":"<<endl;
+                            temp=alb[26];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a27:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a27;
+                            }
+                            nav=alb[26];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 28:
+                            count=1;
+                            cout<<list[27]<<":"<<endl;
+                            temp=alb[27];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a28:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a28;
+                            }
+                            nav=alb[27];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 29:
+                            count=1;
+                            cout<<list[28]<<":"<<endl;
+                            temp=alb[28];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a29:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a29;
+                            }
+                            nav=alb[28];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 30:
+                            count=1;
+                            cout<<list[29]<<":"<<endl;
+                            temp=alb[29];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a30:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a30;
+                            }
+                            nav=alb[29];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 31:
+                            count=1;
+                            cout<<list[30]<<":"<<endl;
+                            temp=alb[30];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a31:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a31;
+                            }
+                            nav=alb[30];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 32:
+                            count=1;
+                            cout<<list[31]<<":"<<endl;
+                            temp=alb[31];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a32:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a32;
+                            }
+                            nav=alb[31];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 33:
+                            count=1;
+                            cout<<list[32]<<":"<<endl;
+                            temp=alb[32];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a33:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a33;
+                            }
+                            nav=alb[32];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 34:
+                            count=1;
+                            cout<<list[33]<<":"<<endl;
+                            temp=alb[33];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a34:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a34;
+                            }
+                            nav=alb[33];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 35:
+                            count=1;
+                            cout<<list[34]<<":"<<endl;
+                            temp=alb[34];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a35:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a35;
+                            }
+                            nav=alb[34];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 36:
+                            count=1;
+                            cout<<list[35]<<":"<<endl;
+                            temp=alb[35];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a36:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a36;
+                            }
+                            nav=alb[35];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 37:
+                            count=1;
+                            cout<<list[36]<<":"<<endl;
+                            temp=alb[36];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a37:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a37;
+                            }
+                            nav=alb[36];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 38:
+                            count=1;
+                            cout<<list[37]<<":"<<endl;
+                            temp=alb[37];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a38:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a38;
+                            }
+                            nav=alb[37];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 39:
+                            count=1;
+                            cout<<list[38]<<":"<<endl;
+                            temp=alb[38];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a39:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a39;
+                            }
+                            nav=alb[38];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 40:
+                            count=1;
+                            cout<<list[39]<<":"<<endl;
+                            temp=alb[39];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a40:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a40;
+                            }
+                            nav=alb[39];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 41:
+                            count=1;
+                            cout<<list[40]<<":"<<endl;
+                            temp=alb[40];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a41:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a41;
+                            }
+                            nav=alb[40];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 42:
+                            count=1;
+                            cout<<list[41]<<":"<<endl;
+                            temp=alb[41];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a42:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a42;
+                            }
+                            nav=alb[41];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 43:
+                            count=1;
+                            cout<<list[42]<<":"<<endl;
+                            temp=alb[42];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a43:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a43;
+                            }
+                            nav=alb[42];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 44:
+                            count=1;
+                            cout<<list[43]<<":"<<endl;
+                            temp=alb[43];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a44:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a44;
+                            }
+                            nav=alb[43];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 45:
+                            count=1;
+                            cout<<list[44]<<":"<<endl;
+                            temp=alb[44];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a45:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a45;
+                            }
+                            nav=alb[44];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 46:
+                            count=1;
+                            cout<<list[45]<<":"<<endl;
+                            temp=alb[45];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a46:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a46;
+                            }
+                            nav=alb[45];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 47:
+                            count=1;
+                            cout<<list[46]<<":"<<endl;
+                            temp=alb[46];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a47:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a47;
+                            }
+                            nav=alb[46];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 48:
+                            count=1;
+                            cout<<list[47]<<":"<<endl;
+                            temp=alb[47];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a48:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a48;
+                            }
+                            nav=alb[47];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 49:
+                            count=1;
+                            cout<<list[48]<<":"<<endl;
+                            temp=alb[48];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a49:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a49;
+                            }
+                            nav=alb[48];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 50:
+                            count=1;
+                            cout<<list[49]<<":"<<endl;
+                            temp=alb[49];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a50:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a50;
+                            }
+                            nav=alb[49];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 51:
+                            count=1;
+                            cout<<list[50]<<":"<<endl;
+                            temp=alb[50];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a51:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a51;
+                            }
+                            nav=alb[50];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 52:
+                            count=1;
+                            cout<<list[51]<<":"<<endl;
+                            temp=alb[51];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a52:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a52;
+                            }
+                            nav=alb[51];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 53:
+                            count=1;
+                            cout<<list[52]<<":"<<endl;
+                            temp=alb[52];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a53:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a53;
+                            }
+                            nav=alb[52];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 54:
+                            count=1;
+                            cout<<list[53]<<":"<<endl;
+                            temp=alb[53];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a54:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a54;
+                            }
+                            nav=alb[53];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 55:
+                            count=1;
+                            cout<<list[54]<<":"<<endl;
+                            temp=alb[54];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a55:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a55;
+                            }
+                            nav=alb[54];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 56:
+                            count=1;
+                            cout<<list[55]<<":"<<endl;
+                            temp=alb[55];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a56:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a56;
+                            }
+                            nav=alb[55];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 57:
+                            count=1;
+                            cout<<list[56]<<":"<<endl;
+                            temp=alb[56];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a57:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a57;
+                            }
+                            nav=alb[56];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 58:
+                            count=1;
+                            cout<<list[57]<<":"<<endl;
+                            temp=alb[57];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a58:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a58;
+                            }
+                            nav=alb[57];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 59:
+                            count=1;
+                            cout<<list[58]<<":"<<endl;
+                            temp=alb[58];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a59:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a59;
+                            }
+                            nav=alb[58];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 60:
+                            count=1;
+                            cout<<list[59]<<":"<<endl;
+                            temp=alb[59];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a60:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a60;
+                            }
+                            nav=alb[59];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 61:
+                            count=1;
+                            cout<<list[60]<<":"<<endl;
+                            temp=alb[60];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a61:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a62;
+                            }
+                            nav=alb[60];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 62:
+                            count=1;
+                            cout<<list[61]<<":"<<endl;
+                            temp=alb[61];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a62:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a62;
+                            }
+                            nav=alb[61];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 63:
+                            count=1;
+                            cout<<list[62]<<":"<<endl;
+                            temp=alb[62];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a63:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a63;
+                            }
+                            nav=alb[62];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 64:
+                            count=1;
+                            cout<<list[63]<<":"<<endl;
+                            temp=alb[63];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a64:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a64;
+                            }
+                            nav=alb[63];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 65:
+                            count=1;
+                            cout<<list[64]<<":"<<endl;
+                            temp=alb[64];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a65:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a65;
+                            }
+                            nav=alb[64];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 66:
+                            count=1;
+                            cout<<list[65]<<":"<<endl;
+                            temp=alb[65];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a66:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a66;
+                            }
+                            nav=alb[65];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 67:
+                            count=1;
+                            cout<<list[66]<<":"<<endl;
+                            temp=alb[66];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a67:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a67;
+                            }
+                            nav=alb[66];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                        case 68:
+                            count=1;
+                            cout<<list[67]<<":"<<endl;
+                            temp=alb[67];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Name:"<<temp->name<<endl;
+                                cout<<endl;
+                                temp=temp->album;
+                                count++;
+                            }
+                            a68:
+                            cout<<"Enter the S.No of the song you want to listen:";
+                            cin>>opt4;
+                            if(opt4>count)
+                            {
+                                cout<<endl<<"Invalid option!!! Enter valid option";
+                                goto a68;
+                            }
+                            nav=alb[67];
+                            move=0;
+                            while(move<opt4-1)
+                            {
+                                nav=nav->album;
+                                move++;
+                            }
+                            //Code to open the link in browser
+                            break;
+                    }
+                    break;
             }
     }
 
