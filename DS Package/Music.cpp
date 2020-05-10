@@ -1,3 +1,4 @@
+#include<bits/stdc++.h>
 #include<iostream>
 #include<string>
 #include<windows.h>
@@ -53,6 +54,7 @@ int main()
     int i;
     Song Tracks[113];
     string list[68];
+    LPCSTR verb="open";
 
     list[0]="MASTER";
     list[1]="SOORARAI POTTRU";
@@ -2328,7 +2330,7 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -2372,7 +2374,7 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -2416,7 +2418,7 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -2460,7 +2462,7 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -2504,7 +2506,7 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -2548,7 +2550,7 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -2592,7 +2594,7 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -2636,7 +2638,7 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -2680,7 +2682,7 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -2724,7 +2726,7 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -2768,7 +2770,7 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -2812,7 +2814,7 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -2856,7 +2858,7 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -2900,7 +2902,7 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -2958,7 +2960,7 @@ int main()
                                                 nav=nav->genre;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -3002,7 +3004,7 @@ int main()
                                                 nav=nav->genre;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -3046,7 +3048,7 @@ int main()
                                                 nav=nav->genre;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -3090,7 +3092,7 @@ int main()
                                                 nav=nav->genre;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -3134,7 +3136,7 @@ int main()
                                                 nav=nav->genre;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -3178,7 +3180,7 @@ int main()
                                                 nav=nav->genre;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -3234,7 +3236,7 @@ int main()
                                                 nav=nav->playlist1;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -3277,7 +3279,7 @@ int main()
                                                 nav=nav->playlist2;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -3321,7 +3323,7 @@ int main()
                                                 nav=nav->playlist3;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -3364,7 +3366,7 @@ int main()
                                                 nav=nav->playlist4;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -3407,7 +3409,7 @@ int main()
                                                 nav=nav->playlist5;
                                                 mov++;
                                             }
-                                            //Code to open the link in browser
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                         }
                                     }
                                 }
@@ -3462,7 +3464,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 2:
                             count=1;
@@ -3491,7 +3493,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 3:
                             count=1;
@@ -3520,7 +3522,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 4:
                             count=1;
@@ -3549,7 +3551,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 5:
                             count=1;
@@ -3578,7 +3580,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 6:
                             count=1;
@@ -3607,7 +3609,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 7:
                             count=1;
@@ -3636,7 +3638,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 8:
                             count=1;
@@ -3665,7 +3667,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 9:
                             count=1;
@@ -3694,7 +3696,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 10:
                             count=1;
@@ -3723,7 +3725,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 11:
                             count=1;
@@ -3752,7 +3754,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 12:
                             count=1;
@@ -3781,7 +3783,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 13:
                             count=1;
@@ -3810,7 +3812,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 14:
                             count=1;
@@ -3839,7 +3841,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 15:
                             count=1;
@@ -3868,7 +3870,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 16:
                             count=1;
@@ -3897,7 +3899,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 17:
                             count=1;
@@ -3926,7 +3928,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 18:
                             count=1;
@@ -3955,7 +3957,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 19:
                             count=1;
@@ -3984,7 +3986,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 20:
                             count=1;
@@ -4013,7 +4015,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 21:
                             count=1;
@@ -4042,7 +4044,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 22:
                             count=1;
@@ -4071,7 +4073,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 23:
                             count=1;
@@ -4100,7 +4102,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 24:
                             count=1;
@@ -4129,7 +4131,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 25:
                             count=1;
@@ -4158,7 +4160,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 26:
                             count=1;
@@ -4187,7 +4189,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 27:
                             count=1;
@@ -4216,7 +4218,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 28:
                             count=1;
@@ -4245,7 +4247,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 29:
                             count=1;
@@ -4274,7 +4276,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 30:
                             count=1;
@@ -4303,7 +4305,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 31:
                             count=1;
@@ -4332,7 +4334,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 32:
                             count=1;
@@ -4361,7 +4363,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 33:
                             count=1;
@@ -4390,7 +4392,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 34:
                             count=1;
@@ -4419,7 +4421,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 35:
                             count=1;
@@ -4448,7 +4450,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 36:
                             count=1;
@@ -4477,7 +4479,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 37:
                             count=1;
@@ -4506,7 +4508,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 38:
                             count=1;
@@ -4535,7 +4537,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 39:
                             count=1;
@@ -4564,7 +4566,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 40:
                             count=1;
@@ -4593,7 +4595,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 41:
                             count=1;
@@ -4622,7 +4624,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 42:
                             count=1;
@@ -4651,7 +4653,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 43:
                             count=1;
@@ -4680,7 +4682,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 44:
                             count=1;
@@ -4709,7 +4711,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 45:
                             count=1;
@@ -4738,7 +4740,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 46:
                             count=1;
@@ -4767,7 +4769,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 47:
                             count=1;
@@ -4796,7 +4798,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 48:
                             count=1;
@@ -4825,7 +4827,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 49:
                             count=1;
@@ -4854,7 +4856,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 50:
                             count=1;
@@ -4883,7 +4885,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 51:
                             count=1;
@@ -4912,7 +4914,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 52:
                             count=1;
@@ -4941,7 +4943,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 53:
                             count=1;
@@ -4970,7 +4972,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 54:
                             count=1;
@@ -4999,7 +5001,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 55:
                             count=1;
@@ -5028,7 +5030,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 56:
                             count=1;
@@ -5057,7 +5059,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 57:
                             count=1;
@@ -5086,7 +5088,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 58:
                             count=1;
@@ -5115,7 +5117,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 59:
                             count=1;
@@ -5144,7 +5146,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 60:
                             count=1;
@@ -5173,7 +5175,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 61:
                             count=1;
@@ -5202,7 +5204,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 62:
                             count=1;
@@ -5231,7 +5233,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 63:
                             count=1;
@@ -5260,7 +5262,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 64:
                             count=1;
@@ -5289,7 +5291,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 65:
                             count=1;
@@ -5318,7 +5320,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 66:
                             count=1;
@@ -5347,7 +5349,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 67:
                             count=1;
@@ -5376,7 +5378,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                         case 68:
                             count=1;
@@ -5405,7 +5407,7 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
-                            //Code to open the link in browser
+                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             break;
                     }
                     break; 
