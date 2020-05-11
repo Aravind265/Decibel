@@ -740,7 +740,7 @@ int main()
     Tracks[83].genre_name="LOVE";
     Tracks[83].playlist_name1="INIYA IRAVU";
     Tracks[83].url="https://www.youtube.com/watch?v=v-hL3sks2qI";
-    
+
     Tracks[84].name="GULEBA";
     Tracks[84].artist_name="ANIRUDH RAVICHANDER";
     Tracks[84].album_name="GULEBAGAVALI";
@@ -937,7 +937,7 @@ int main()
     Tracks[112].playlist_name1="PARTY TONIGHT";
     Tracks[112].url="https://www.youtube.com/watch?v=NZE6pFlnSeU";
 
-    initialize();  
+    initialize();
 
     for(i=0;i<=112;i++)
     {
@@ -952,7 +952,7 @@ int main()
             {
                 Tracks[i].artist=art[0];
                 art[0]=&Tracks[i];
-            }   
+            }
         }
 
         else if(Tracks[i].artist_name=="G.V.PRAKASH KUMAR")
@@ -1021,7 +1021,7 @@ int main()
             else
             {
                 Tracks[i].artist=art[5];
-                art[5]=&Tracks[i];   
+                art[5]=&Tracks[i];
             }
         }
 
@@ -1288,7 +1288,7 @@ int main()
             {
                 Tracks[i].playlist5=play[4];
                 play[4]=&Tracks[i];
-            }  
+            }
         }
 
         if(Tracks[i].album_name=="MASTER")
@@ -2249,13 +2249,15 @@ int main()
     char check,nopt;
     int count=1,move=0,cusc=1;
 
-    cout<<"\t\tWelcome to the Music Player"<<endl;
+    cout<<"\t\t\t\t\t\t->->->->->Welcome to the Music Player<-<-<-<-<-"<<endl;
     cout<<"\t\tThis player consists of collection of over hundred songs from over 60 albums and 15 different artists and various genres"<<endl;
     cout<<"\t\tIn this player the user can create one custom playlist for themselves"<<endl;
-    cout<<"\t\tThe user interface will be menu driven and the user can select the from the menu"<<endl<<endl;
-    cout<<"\t\tMain menu->"<<endl;
+    cout<<"\t\tThe user interface will be menu driven and the user can select the from the menu"<<endl;
+    cout<<"\t\tWhen the user wants to open a track it will be opened on the browser"<<endl;
+    cout<<"\t\tMultiple tracks can be opened in succession"<<endl;
+    cout<<"\t\tMain menu:"<<endl;
     cout<<"\t\t1. Search and open songs from existing playlists"<<endl;
-    cout<<"\t\t2. Create a custom playlist for youself"<<endl;
+    cout<<"\t\t2. Create a custom playlist for yourself"<<endl;
     cout<<"\t\tEnter the option:";
     cin>>opt1;
     cout<<endl<<endl;
@@ -6163,7 +6165,7 @@ int main()
                             }
                             break;
                     }
-                    break; 
+                    break;
             }
             break;
         case 2:
