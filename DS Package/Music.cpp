@@ -2297,7 +2297,6 @@ int main()
                     switch(opt3)
                     {
                         case 1:
-                            art1:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
@@ -2335,11 +2334,13 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
+                                            art1:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->artist;
                                                 goto art1;
                                             }
                                             else
@@ -2352,7 +2353,6 @@ int main()
                             }
                             break;
                         case 2:
-                            art2:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
@@ -2390,11 +2390,13 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
+                                            art2:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->artist;
                                                 goto art2;
                                             }
                                             else
@@ -2407,7 +2409,6 @@ int main()
                             }
                             break;
                         case 3:
-                            art3:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
@@ -2445,11 +2446,13 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
+                                            art3:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->artist;
                                                 goto art3;
                                             }
                                             else
@@ -2462,7 +2465,6 @@ int main()
                             }
                             break;
                         case 4:
-                            art4:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
@@ -2500,11 +2502,13 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
+                                            art4:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->artist;
                                                 goto art4;
                                             }
                                             else
@@ -2517,7 +2521,6 @@ int main()
                             }
                             break;
                         case 5:
-                            art5:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
@@ -2555,11 +2558,13 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
+                                            art5:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->artist;
                                                 goto art5;
                                             }
                                             else
@@ -2572,7 +2577,6 @@ int main()
                             }
                             break;
                         case 6:
-                            art6:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
@@ -2610,11 +2614,13 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
+                                            art6:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->artist;
                                                 goto art6;
                                             }
                                             else
@@ -2627,7 +2633,6 @@ int main()
                             }
                             break;
                         case 7:
-                            art7:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
@@ -2665,11 +2670,13 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
+                                            art7:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->artist;
                                                 goto art7;
                                             }
                                             else
@@ -2682,7 +2689,6 @@ int main()
                             }
                             break;
                         case 8:
-                            art8:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
@@ -2720,11 +2726,13 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
+                                            art8:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->artist;
                                                 goto art8;
                                             }
                                             else
@@ -2737,7 +2745,6 @@ int main()
                             }
                             break;
                         case 9:
-                            art9:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
@@ -2775,11 +2782,13 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
+                                            art9:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->artist;
                                                 goto art9;
                                             }
                                             else
@@ -2792,7 +2801,6 @@ int main()
                             }
                             break;
                         case 10:
-                            art10:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
@@ -2830,11 +2838,13 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
+                                            art10:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->artist;
                                                 goto art10;
                                             }
                                             else
@@ -2847,7 +2857,6 @@ int main()
                             }
                             break;
                         case 11:
-                            art11:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
@@ -2885,11 +2894,13 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
+                                            art11:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->artist;
                                                 goto art11;
                                             }
                                             else
@@ -2902,7 +2913,6 @@ int main()
                             }
                             break;
                         case 12:
-                            art12:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
@@ -2940,11 +2950,13 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
+                                            art12:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->artist;
                                                 goto art12;
                                             }
                                             else
@@ -2957,7 +2969,6 @@ int main()
                             }
                             break;
                         case 13:
-                            art13:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
@@ -2995,11 +3006,13 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
+                                            art13:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->artist;
                                                 goto art13;
                                             }
                                             else
@@ -3012,7 +3025,6 @@ int main()
                             }
                             break;
                         case 14:
-                            art14:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below:"<<endl;
@@ -3050,11 +3062,13 @@ int main()
                                                 nav=nav->artist;
                                                 mov++;
                                             }
+                                            art14:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->artist;
                                                 goto art14;
                                             }
                                             else
@@ -3081,7 +3095,6 @@ int main()
                     switch(opt3)
                     {
                         case 1:
-                            gn1:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
@@ -3119,11 +3132,13 @@ int main()
                                                 nav=nav->genre;
                                                 mov++;
                                             }
+                                            gn1:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->genre;
                                                 goto gn1;
                                             }
                                             else
@@ -3136,7 +3151,6 @@ int main()
                             }
                             break;
                         case 2:
-                            gn2:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
@@ -3174,11 +3188,13 @@ int main()
                                                 nav=nav->genre;
                                                 mov++;
                                             }
+                                            gn2:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->genre;
                                                 goto gn2;
                                             }
                                             else
@@ -3191,7 +3207,6 @@ int main()
                             }
                             break;
                         case 3:
-                            gn3:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
@@ -3229,11 +3244,13 @@ int main()
                                                 nav=nav->genre;
                                                 mov++;
                                             }
+                                            gn3:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->genre;
                                                 goto gn3;
                                             }
                                             else
@@ -3246,7 +3263,6 @@ int main()
                             }
                             break;
                         case 4:
-                            gn4:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
@@ -3284,11 +3300,13 @@ int main()
                                                 nav=nav->genre;
                                                 mov++;
                                             }
+                                            gn4:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->genre;
                                                 goto gn4;
                                             }
                                             else
@@ -3301,7 +3319,6 @@ int main()
                             }
                             break;
                         case 5:
-                            gn5:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
@@ -3339,11 +3356,13 @@ int main()
                                                 nav=nav->genre;
                                                 mov++;
                                             }
+                                            gn5:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->genre;
                                                 goto gn5;
                                             }
                                             else
@@ -3356,7 +3375,6 @@ int main()
                             }
                             break;
                         case 6:
-                            gn6:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
@@ -3394,11 +3412,13 @@ int main()
                                                 nav=nav->genre;
                                                 mov++;
                                             }
+                                            gn6:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->genre;
                                                 goto gn6;
                                             }
                                             else
@@ -3424,7 +3444,6 @@ int main()
                     switch(opt3)
                     {
                         case 1:
-                            pl1:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
@@ -3461,11 +3480,13 @@ int main()
                                                 nav=nav->playlist1;
                                                 mov++;
                                             }
+                                            pl1:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->playlist1;
                                                 goto pl1;
                                             }
                                             else
@@ -3478,7 +3499,6 @@ int main()
                             }
                             break;
                         case 2:
-                            pl2:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
@@ -3515,11 +3535,13 @@ int main()
                                                 nav=nav->playlist2;
                                                 mov++;
                                             }
+                                            pl2:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->playlist2;
                                                 goto pl2;
                                             }
                                             else
@@ -3532,7 +3554,6 @@ int main()
                             }
                             break;
                         case 3:
-                            pl3:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
@@ -3570,11 +3591,13 @@ int main()
                                                 nav=nav->playlist3;
                                                 mov++;
                                             }
+                                            pl3:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->playlist3;
                                                 goto pl3;
                                             }
                                             else
@@ -3587,7 +3610,6 @@ int main()
                             }
                             break;
                         case 4:
-                            pl4:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
@@ -3624,11 +3646,13 @@ int main()
                                                 nav=nav->playlist4;
                                                 mov++;
                                             }
+                                            pl4:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->playlist4;
                                                 goto pl4;
                                             }
                                             else
@@ -3641,7 +3665,6 @@ int main()
                             }
                             break;
                         case 5:
-                            pl5:
                             count=1;
                             cout<<endl<<endl;
                             cout<<"Songs are listed below"<<endl;
@@ -3678,11 +3701,13 @@ int main()
                                                 nav=nav->playlist5;
                                                 mov++;
                                             }
+                                            pl5:
                                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                                             cout<<"Do you want to open another song?(Y/N):";
                                             cin>>nopt;
                                             if(nopt=='Y'||nopt=='y')
                                             {
+                                                nav=nav->playlist5;
                                                 goto pl5;
                                             }
                                             else
@@ -3718,7 +3743,6 @@ int main()
                     switch(opt3)
                     {
                         case 1:
-                            al1:
                             count=1;
                             cout<<list[0]<<":"<<endl;
                             temp=alb[0];
@@ -3745,16 +3769,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al1:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al1;
                             }
                             break;
                         case 2:
-                            al2:
                             count=1;
                             cout<<list[1]<<":"<<endl;
                             temp=alb[1];
@@ -3781,16 +3806,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al2:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al2;
                             }
                             break;
                         case 3:
-                            al3:
                             count=1;
                             cout<<list[2]<<":"<<endl;
                             temp=alb[2];
@@ -3817,16 +3843,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al3:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al3;
                             }
                             break;
                         case 4:
-                            al4:
                             count=1;
                             cout<<list[3]<<":"<<endl;
                             temp=alb[3];
@@ -3853,16 +3880,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al4:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al4;
                             }
                             break;
                         case 5:
-                            al5:
                             count=1;
                             cout<<list[4]<<":"<<endl;
                             temp=alb[4];
@@ -3889,16 +3917,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al5:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al5;
                             }
                             break;
                         case 6:
-                            al6:
                             count=1;
                             cout<<list[5]<<":"<<endl;
                             temp=alb[5];
@@ -3925,16 +3954,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al6:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al6;
                             }
                             break;
                         case 7:
-                            al7:
                             count=1;
                             cout<<list[6]<<":"<<endl;
                             temp=alb[6];
@@ -3961,16 +3991,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al7:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al7;
                             }
                             break;
                         case 8:
-                            al8:
                             count=1;
                             cout<<list[7]<<":"<<endl;
                             temp=alb[7];
@@ -3997,16 +4028,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al8:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al8;
                             }
                             break;
                         case 9:
-                            al9:
                             count=1;
                             cout<<list[8]<<":"<<endl;
                             temp=alb[8];
@@ -4033,16 +4065,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al9:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al9;
                             }
                             break;
                         case 10:
-                            al10:
                             count=1;
                             cout<<list[9]<<":"<<endl;
                             temp=alb[9];
@@ -4069,16 +4102,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al10:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al10;
                             }
                             break;
                         case 11:
-                            al11:
                             count=1;
                             cout<<list[10]<<":"<<endl;
                             temp=alb[10];
@@ -4105,16 +4139,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al11:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al11;
                             }
                             break;
                         case 12:
-                            al12:
                             count=1;
                             cout<<list[11]<<":"<<endl;
                             temp=alb[11];
@@ -4141,16 +4176,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al12:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al12;
                             }
                             break;
                         case 13:
-                            al13:
                             count=1;
                             cout<<list[12]<<":"<<endl;
                             temp=alb[12];
@@ -4177,16 +4213,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al13:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al13;
                             }
                             break;
                         case 14:
-                            al14:
                             count=1;
                             cout<<list[13]<<":"<<endl;
                             temp=alb[13];
@@ -4213,16 +4250,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al14:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al14;
                             }
                             break;
                         case 15:
-                            al15:
                             count=1;
                             cout<<list[14]<<":"<<endl;
                             temp=alb[14];
@@ -4249,16 +4287,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al15:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al15;
                             }
                             break;
                         case 16:
-                            al16:
                             count=1;
                             cout<<list[15]<<":"<<endl;
                             temp=alb[15];
@@ -4285,16 +4324,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al16:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al16;
                             }
                             break;
                         case 17:
-                            al17:
                             count=1;
                             cout<<list[16]<<":"<<endl;
                             temp=alb[16];
@@ -4321,16 +4361,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al17:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al17;
                             }
                             break;
                         case 18:
-                            al18:
                             count=1;
                             cout<<list[17]<<":"<<endl;
                             temp=alb[17];
@@ -4357,16 +4398,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al18:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al18;
                             }
                             break;
                         case 19:
-                            al19:
                             count=1;
                             cout<<list[18]<<":"<<endl;
                             temp=alb[18];
@@ -4393,16 +4435,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al19:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al19;
                             }
                             break;
                         case 20:
-                            al20:
                             count=1;
                             cout<<list[19]<<":"<<endl;
                             temp=alb[19];
@@ -4429,16 +4472,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al20:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al20;
                             }
                             break;
                         case 21:
-                            al21:
                             count=1;
                             cout<<list[20]<<":"<<endl;
                             temp=alb[20];
@@ -4465,16 +4509,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al21:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al21;
                             }
                             break;
                         case 22:
-                            al22:
                             count=1;
                             cout<<list[21]<<":"<<endl;
                             temp=alb[21];
@@ -4501,16 +4546,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al22:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al22;
                             }
                             break;
                         case 23:
-                            al23:
                             count=1;
                             cout<<list[22]<<":"<<endl;
                             temp=alb[22];
@@ -4537,16 +4583,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al23:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al23;
                             }
                             break;
                         case 24:
-                            al24:
                             count=1;
                             cout<<list[23]<<":"<<endl;
                             temp=alb[23];
@@ -4573,16 +4620,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al24:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al24;
                             }
                             break;
                         case 25:
-                            al25:
                             count=1;
                             cout<<list[24]<<":"<<endl;
                             temp=alb[24];
@@ -4609,16 +4657,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al25:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al25;
                             }
                             break;
                         case 26:
-                            al26:
                             count=1;
                             cout<<list[25]<<":"<<endl;
                             temp=alb[25];
@@ -4645,16 +4694,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al26:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al26;
                             }
                             break;
                         case 27:
-                            al27:
                             count=1;
                             cout<<list[26]<<":"<<endl;
                             temp=alb[26];
@@ -4681,16 +4731,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al27:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al27;
                             }
                             break;
                         case 28:
-                            al28:
                             count=1;
                             cout<<list[27]<<":"<<endl;
                             temp=alb[27];
@@ -4717,16 +4768,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al28:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al28;
                             }
                             break;
                         case 29:
-                            al29:
                             count=1;
                             cout<<list[28]<<":"<<endl;
                             temp=alb[28];
@@ -4753,16 +4805,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al29:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al29;
                             }
                             break;
                         case 30:
-                            al30:
                             count=1;
                             cout<<list[29]<<":"<<endl;
                             temp=alb[29];
@@ -4789,16 +4842,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al30:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al30;
                             }
                             break;
                         case 31:
-                            al31:
                             count=1;
                             cout<<list[30]<<":"<<endl;
                             temp=alb[30];
@@ -4825,16 +4879,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al31:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al31;
                             }
                             break;
                         case 32:
-                            al32:
                             count=1;
                             cout<<list[31]<<":"<<endl;
                             temp=alb[31];
@@ -4861,16 +4916,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al32:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al32;
                             }
                             break;
                         case 33:
-                            al33:
                             count=1;
                             cout<<list[32]<<":"<<endl;
                             temp=alb[32];
@@ -4897,16 +4953,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al33:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al33;
                             }
                             break;
                         case 34:
-                            al34:
                             count=1;
                             cout<<list[33]<<":"<<endl;
                             temp=alb[33];
@@ -4933,16 +4990,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al34:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al34;
                             }
                             break;
                         case 35:
-                            al35:
                             count=1;
                             cout<<list[34]<<":"<<endl;
                             temp=alb[34];
@@ -4969,16 +5027,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al35:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al35;
                             }
                             break;
                         case 36:
-                            al36:
                             count=1;
                             cout<<list[35]<<":"<<endl;
                             temp=alb[35];
@@ -5005,16 +5064,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al36:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al36;
                             }
                             break;
                         case 37:
-                            al37:
                             count=1;
                             cout<<list[36]<<":"<<endl;
                             temp=alb[36];
@@ -5041,16 +5101,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al37:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al37;
                             }
                             break;
                         case 38:
-                            al38:
                             count=1;
                             cout<<list[37]<<":"<<endl;
                             temp=alb[37];
@@ -5077,16 +5138,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al38:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al38;
                             }
                             break;
                         case 39:
-                            al39:
                             count=1;
                             cout<<list[38]<<":"<<endl;
                             temp=alb[38];
@@ -5113,16 +5175,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al39:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al39;
                             }
                             break;
                         case 40:
-                            al40:
                             count=1;
                             cout<<list[39]<<":"<<endl;
                             temp=alb[39];
@@ -5149,16 +5212,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al40:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al40;
                             }
                             break;
                         case 41:
-                            al41:
                             count=1;
                             cout<<list[40]<<":"<<endl;
                             temp=alb[40];
@@ -5185,16 +5249,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al41:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al41;
                             }
                             break;
                         case 42:
-                            al42:
                             count=1;
                             cout<<list[41]<<":"<<endl;
                             temp=alb[41];
@@ -5221,16 +5286,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al42:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al42;
                             }
                             break;
                         case 43:
-                            al43:
                             count=1;
                             cout<<list[42]<<":"<<endl;
                             temp=alb[42];
@@ -5257,16 +5323,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al43:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al43;
                             }
                             break;
                         case 44:
-                            al44:
                             count=1;
                             cout<<list[43]<<":"<<endl;
                             temp=alb[43];
@@ -5293,16 +5360,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al44:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al44;
                             }
                             break;
                         case 45:
-                            al45:
                             count=1;
                             cout<<list[44]<<":"<<endl;
                             temp=alb[44];
@@ -5329,16 +5397,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al45:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al45;
                             }
                             break;
                         case 46:
-                            al46:
                             count=1;
                             cout<<list[45]<<":"<<endl;
                             temp=alb[45];
@@ -5365,16 +5434,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al46:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al46;
                             }
                             break;
                         case 47:
-                            al47:
                             count=1;
                             cout<<list[46]<<":"<<endl;
                             temp=alb[46];
@@ -5401,16 +5471,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al47:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al47;
                             }
                             break;
                         case 48:
-                            al48:
                             count=1;
                             cout<<list[47]<<":"<<endl;
                             temp=alb[47];
@@ -5437,16 +5508,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al48:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al48;
                             }
                             break;
                         case 49:
-                            al49:
                             count=1;
                             cout<<list[48]<<":"<<endl;
                             temp=alb[48];
@@ -5473,16 +5545,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al49:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al49;
                             }
                             break;
                         case 50:
-                            al50:
                             count=1;
                             cout<<list[49]<<":"<<endl;
                             temp=alb[49];
@@ -5509,16 +5582,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al50:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al50;
                             }
                             break;
                         case 51:
-                            al51:
                             count=1;
                             cout<<list[50]<<":"<<endl;
                             temp=alb[50];
@@ -5545,16 +5619,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al51:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al51;
                             }
                             break;
                         case 52:
-                            al52:
                             count=1;
                             cout<<list[51]<<":"<<endl;
                             temp=alb[51];
@@ -5581,16 +5656,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al52:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al52;
                             }
                             break;
                         case 53:
-                            al53:
                             count=1;
                             cout<<list[52]<<":"<<endl;
                             temp=alb[52];
@@ -5617,16 +5693,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al53:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al53;
                             }
                             break;
                         case 54:
-                            al54:
                             count=1;
                             cout<<list[53]<<":"<<endl;
                             temp=alb[53];
@@ -5653,16 +5730,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al54:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al54;
                             }
                             break;
                         case 55:
-                            al55:
                             count=1;
                             cout<<list[54]<<":"<<endl;
                             temp=alb[54];
@@ -5689,16 +5767,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al55:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al55;
                             }
                             break;
                         case 56:
-                            al56:
                             count=1;
                             cout<<list[55]<<":"<<endl;
                             temp=alb[55];
@@ -5725,16 +5804,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al56:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al56;
                             }
                             break;
                         case 57:
-                            al57:
                             count=1;
                             cout<<list[56]<<":"<<endl;
                             temp=alb[56];
@@ -5761,16 +5841,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al57:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al57;
                             }
                             break;
                         case 58:
-                            al58:
                             count=1;
                             cout<<list[57]<<":"<<endl;
                             temp=alb[57];
@@ -5797,16 +5878,18 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+
+                            al58:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al58;
                             }
                             break;
                         case 59:
-                            al59:
                             count=1;
                             cout<<list[58]<<":"<<endl;
                             temp=alb[58];
@@ -5833,16 +5916,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al59:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al59;
                             }
                             break;
                         case 60:
-                            al60:
                             count=1;
                             cout<<list[59]<<":"<<endl;
                             temp=alb[59];
@@ -5869,16 +5953,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al60:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al60;
                             }
                             break;
                         case 61:
-                            al61:
                             count=1;
                             cout<<list[60]<<":"<<endl;
                             temp=alb[60];
@@ -5905,16 +5990,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al61:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al61;
                             }
                             break;
                         case 62:
-                            al62:
                             count=1;
                             cout<<list[61]<<":"<<endl;
                             temp=alb[61];
@@ -5941,16 +6027,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al62:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al62;
                             }
                             break;
                         case 63:
-                            al63:
                             count=1;
                             cout<<list[62]<<":"<<endl;
                             temp=alb[62];
@@ -5977,16 +6064,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al63:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al63;
                             }
                             break;
                         case 64:
-                            al64:
                             count=1;
                             cout<<list[63]<<":"<<endl;
                             temp=alb[63];
@@ -6013,16 +6101,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al64:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al64;
                             }
                             break;
                         case 65:
-                            al65:
                             count=1;
                             cout<<list[64]<<":"<<endl;
                             temp=alb[64];
@@ -6049,16 +6138,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al65:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al65;
                             }
                             break;
                         case 66:
-                            al66:
                             count=1;
                             cout<<list[65]<<":"<<endl;
                             temp=alb[65];
@@ -6085,16 +6175,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al66:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al66;
                             }
                             break;
                         case 67:
-                            al67:
                             count=1;
                             cout<<list[66]<<":"<<endl;
                             temp=alb[66];
@@ -6121,16 +6212,17 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al67:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al67;
                             }
                             break;
                         case 68:
-                            al68:
                             count=1;
                             cout<<list[67]<<":"<<endl;
                             temp=alb[67];
@@ -6157,11 +6249,13 @@ int main()
                                 nav=nav->album;
                                 move++;
                             }
+                            al68:
                             ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
                             cout<<"Do you want to open another song?(Y/N):";
                             cin>>nopt;
                             if(nopt=='Y'||nopt=='y')
                             {
+                                nav=nav->album;
                                 goto al68;
                             }
                             break;
@@ -6499,14 +6593,5 @@ int main()
             ShellExecuteA(NULL,verb,tcus->url,NULL,NULL,SW_SHOWNORMAL);
             break;
     }
-
-
-    /*Song *t=play[2];
-    while(t!=NULL)
-    {
-        cout<<t->name<<endl;
-        t=t->playlist3;
-    }*/
-
     return 0;
 }
