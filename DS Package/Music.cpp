@@ -3702,7 +3702,7 @@ int main()
                     cout<<"Albums are listed below"<<endl;
                     for(j=1;j<=68;j++)
                     {
-                        cout<<j<<"."<<list[j-i]<<endl;
+                        cout<<j<<"."<<list[j-1]<<endl;
                         if(j%5==0||j==68)
                         {
                             cout<<"Did you find the album you are looking for?(Y/N):";
@@ -3711,6 +3711,7 @@ int main()
                             {
                                 cout<<endl<<"Enter the album number to view the tracks:";
                                 cin>>opt3;
+                                break;
                             }
                         }
                     }
