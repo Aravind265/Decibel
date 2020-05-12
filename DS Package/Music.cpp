@@ -27,12 +27,12 @@ public:
     Song *custom;
 };
 
-Song *art[14],*gen[6],*play[5],*alb[68],*cus;
+Song *art[15],*gen[6],*play[5],*alb[68],*cus;
 
 void initialize()
 {
     int x;
-    for(x=0;x<14;x++)
+    for(x=0;x<15;x++)
     {
         art[x]=NULL;
     }
@@ -1134,6 +1134,20 @@ int main()
             {
                 Tracks[i].artist=art[13];
                 art[13]=&Tracks[i];
+            }
+        }
+
+        else if(Tracks[i].artist_name=="A.R.RAHMAN")
+        {
+            if(art[14]==NULL)
+            {
+                art[14]=&Tracks[i];
+                Tracks[i].artist=NULL;
+            }
+            else
+            {
+                Tracks[i].artist=art[14];
+                art[14]=&Tracks[i];
             }
         }
 
@@ -2292,6 +2306,7 @@ int main()
                     cout<<"12.Harris Jayaraj"<<endl;
                     cout<<"13.Vivek-Mervin"<<endl;
                     cout<<"14.Sam.C.S"<<endl;
+                    cout<<"15.A.R.Rahman"<<endl;
                     cout<<"Enter the artist from which you want to choose the track(option)";
                     cin>>opt3;
                     switch(opt3)
@@ -3070,6 +3085,62 @@ int main()
                                             {
                                                 nav=nav->artist;
                                                 goto art14;
+                                            }
+                                            else
+                                            {
+                                                break;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 15:
+                            count=1;
+                            cout<<endl<<endl;
+                            cout<<"Songs are listed below:"<<endl;
+                            temp=art[13];
+                            while(temp!=NULL)
+                            {
+                                cout<<"S.No:"<<count<<endl;
+                                cout<<"Song:"<<temp->name<<endl;
+                                cout<<"Album:"<<temp->album_name<<endl;
+                                cout<<"Genre:"<<temp->genre_name<<endl;
+                                cout<<endl;
+                                temp=temp->artist;
+                                count++;
+                                if(count%5==0||temp->artist==NULL)
+                                {
+                                    cout<<"Did you find the track you want?(Y/N):";
+                                    cin>>check;
+                                    cout<<endl;
+                                    if(check=='Y'||check=='y')
+                                    {
+                                        r15:
+                                        cout<<"Enter the S.No of the song to open in browser:";
+                                        cin>>opt4;
+                                        if(opt4>count)
+                                        {
+                                            cout<<"Invalid option!!! Enter the correct option"<<endl;
+                                            goto r15;
+                                        }
+                                        else
+                                        {
+                                            int mov=0;
+                                            nav=art[14];
+                                            while(mov<opt4-1)
+                                            {
+                                                nav=nav->artist;
+                                                mov++;
+                                            }
+                                            art15:
+                                            ShellExecuteA(NULL,verb,nav->url,NULL,NULL,SW_SHOWNORMAL);
+                                            cout<<"Do you want to open another song?(Y/N):";
+                                            cin>>nopt;
+                                            if(nopt=='Y'||nopt=='y')
+                                            {
+                                                nav=nav->artist;
+                                                goto art15;
                                             }
                                             else
                                             {
